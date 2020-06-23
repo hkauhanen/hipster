@@ -4,7 +4,7 @@
 \alias{cat_csv}
 \title{Concatenate CSVs}
 \usage{
-cat_csv(folder, pattern)
+cat_csv(folder, pattern = ".csv$")
 }
 \arguments{
 \item{folder}{Folder in which the CSV files live}

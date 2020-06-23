@@ -9,7 +9,7 @@
 #' @importFrom utils read.csv setTxtProgressBar txtProgressBar
 #' @export
 cat_csv <- function(folder,
-                    pattern) {
+                    pattern = ".csv$") {
   tmpfile <- tempfile()
   files <- list.files(folder, pattern=pattern, full.names=TRUE)
   if (length(files) == 1) {
@@ -35,9 +35,13 @@ cat_csv <- function(folder,
 
 #' Concatenate CSVs inside a .tar.gz
 #'
-#' Row-bind several CSV files that live inside a tar.gz archive. The
-#' \code{csv_folder} argument specifies an optional directory within the
-#' archive that contains the CSV files.
+#' Row-bind several CSV files that live inside a tar.gz archive. It is
+#' assumed that these CSV files are contained within a directory called
+#' \code{foo} where \code{foo.tar.gz} is the filename of the archive; if
+#' this is not the case, unexpected behaviour will occur.
+#'
+#' The \code{csv_folder} argument can be used to specify an optional directory 
+#' within the \code{foo} directory that contains the CSV files.
 #'
 #' @param gzfile Archive
 #' @param pattern Pattern which the CSV files are to match

@@ -23,6 +23,6 @@ Data frame with the following columns:
 }
 \description{
 Knock out outliers in a linear regression by recursively pruning those
-data points that contribute most to the regression error, operationalized
+data points that contribute the most to the regression error, operationalized
 as the residual sum of squares at each knockout iteration.
 }

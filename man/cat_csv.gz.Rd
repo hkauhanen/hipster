@@ -17,7 +17,12 @@ cat_csv.gz(gzfile, pattern, csv_folder = ".")
 Data frame
 }
 \description{
-Row-bind several CSV files that live inside a tar.gz archive. The
-\code{csv_folder} argument specifies an optional directory within the
-archive that contains the CSV files.
+Row-bind several CSV files that live inside a tar.gz archive. It is
+assumed that these CSV files are contained within a directory called
+\code{foo} where \code{foo.tar.gz} is the filename of the archive; if
+this is not the case, unexpected behaviour will occur.
+}
+\details{
+The \code{csv_folder} argument can be used to specify an optional directory 
+within the \code{foo} directory that contains the CSV files.
 }

@@ -1,6 +1,7 @@
 #' Pretty Print Rounded Figures
 #'
-#' Pretty print a rounded figure so that all trailing digits are shown, including non-zero ones.
+#' Pretty print a rounded figure so that all trailing digits are shown,
+#' including zeroes.
 #'
 #' @param x Number
 #' @param digits Number of digits

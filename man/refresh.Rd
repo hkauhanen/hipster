@@ -10,7 +10,8 @@ refresh(pkg)
 \item{pkg}{Package name (character vector)}
 }
 \description{
-"Refresh" a package by unloading its namespace and immediately re-\code{library}ing
-the package. This is useful if an updated version of the package has been
-installed by another process on the machine in the meantime.
+"Refresh" a package by unloading its namespace and immediately re-requiring
+that namespace. This is useful if an updated version of the package has been
+installed by another process on the machine in the meantime, to avoid
+having to restart the R session.
 }

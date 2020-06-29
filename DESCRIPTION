@@ -1,6 +1,6 @@
 Package: hipster
 Title: Henri's Idiosyncratic Package for Somewhat Tedious Everyday Routines
-Version: 0.0.0.9009
+Version: 0.0.0.9010
 Author: Henri Kauhanen <henri@henr.in>
 Maintainer: Henri Kauhanen <henri@henr.in>
 Description: Routines I wish were included in R by default.
